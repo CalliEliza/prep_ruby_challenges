@@ -1,20 +1,32 @@
 // function where you have players counting
 // user picks number of players and the number counted to
 // used javascript instead of ruby
-
 var j = 0;
 var n = 1;
+var output = document.getElementById("result");
 
-var counter = function(player,number) {
-	var player = document.getElementById("player");  // gets to parameters for function from user
-	var number = document.getElementById("number");
-	
-	while (j < number) { // starts the counter
-		for (i = 1; i < player; i++) {		// loops through the players until number is reached
-				document.write("Player " +i+ " says " +n+ ". " + "<br/>");
-		j++;
-		n = j;
+var counter = function() {
+	var j = 0;
+	var n = 0;
+		while (j < 101) {
+				for (i = 1; i < 11; i++) {
+					if ( j % 11 === 0 ) {
+						document.write("Player " + i + " says " + n + ". " + "<br/>");
+						i++;
+					}
+					else {
+						document.write("Player " + i + " says " + n + ". " + "<br/>");	
+					}
+					j++;
+					n = j;
+				}
 		}
-	}
-	document.write("Player " + i +" says the last number: " +n+ ".");  //anounces the player who says the last number
-}
+		//output.innerHTML = "Player " + i +" says the last number: " +n+ ".";
+};
+
+/*var reset = function() {
+		output.innerHTML = " ";
+
+};*/
+
+counter();
