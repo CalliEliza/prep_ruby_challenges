@@ -10,7 +10,7 @@ var counter = function() {
 	var n = 0;
 		while (j < 101) {
 				for (i = 1; i < 11; i++) {
-					if ( j % 11 === 0 ) {
+					if ( j % 11 === 0 ) { //checks to see if number is divisble by 11
 						document.write("Player " + i + " says " + n + ". " + "<br/>");
 						i++;
 					}
