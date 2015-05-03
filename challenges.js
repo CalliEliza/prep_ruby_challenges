@@ -9,10 +9,9 @@ var power = function (base, exponent) {
 
 // 2. factorial
 var factorial = function (number) {
+  var resulst = number;
   for (i = 1; i < number; i++) {
-    var result = i; 
-    result = result * i;
-    result++;
+    result *= i;
   }
   return result;
 }
