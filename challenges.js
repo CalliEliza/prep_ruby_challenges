@@ -22,8 +22,14 @@ var factorial = function (number) {
 
 
 // 3. Uniques
-var uniques = function (array) {
-		
+var uniques = function (array1) {
+	var noDups = [];
+	for (i = 0; i < array1.length; ++i;) {
+		if (array1[i] !== array1[i+1]) {
+			noDups.push(array1[i]);
+		}
+	return noDups;
+	}
 }
 
 // 4. combinations
