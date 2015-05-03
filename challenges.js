@@ -1,0 +1,4 @@
+// power
+var power = function () {
+
+}
