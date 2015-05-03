@@ -5,3 +5,5 @@ prep_ruby_challenges
 
 
 I completed this challenge using JavaScript.  
+
+The index file and css file are only associated with the counting challenge. 
