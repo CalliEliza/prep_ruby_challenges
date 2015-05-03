@@ -20,3 +20,19 @@ var factorial = function (number) {
 
 
 // 3. Uniques
+var uniques = function (array) {
+	for (i = 0; i <= array.length; i++) {
+		if (array[0] === array[1]) {
+			array.remove([1]);
+		}
+		else if (array[0] === array[2]) {
+			array.remove([2]);
+		}
+		else if (array[0] === array[3]) {
+			array.remove([3]);
+		}
+		else if (array[0] === array[4]) {
+			array.remove([4]);
+		}
+	}	
+}
