@@ -1,3 +1,5 @@
+//All challenges were completed using JavaScript.
+
 // 1, power
 var power = function (base, exponent) {
   var result = base;
