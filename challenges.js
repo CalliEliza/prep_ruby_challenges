@@ -8,7 +8,14 @@ var power = function (base, exponent) {
 }
 
 // 2. factorial
-
+var factorial = function (number) {
+  for (i = 1; i < number; i++) {
+    var result = i; 
+    result = result * i;
+    result++;
+  }
+  return result;
+}
 
 
 
