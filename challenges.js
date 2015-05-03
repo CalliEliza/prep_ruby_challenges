@@ -1,7 +1,7 @@
 // 1, power
 var power = function (base, exponent) {
   var result = base;
-  for (i = 1; i <= exponent; i++) {
+  for (i = 1; i <= exponent; ++i) {
     result = result * base;
   }
   return result;
@@ -10,7 +10,7 @@ var power = function (base, exponent) {
 // 2. factorial
 var factorial = function (number) {
   var result = number;
-  for (i = 1; i < number; i++) {
+  for (i = 1; i < number; ++i) {
     result *= i;
   }
   return result;
@@ -21,7 +21,7 @@ var factorial = function (number) {
 
 // 3. Uniques
 var uniques = function (array) {
-	for (i = 0; i <= array.length; i++) {
+	for (i = 0; i <= array.length; ++i) {
 		if (array[0] === array[1]) {
 			array.remove([1]);
 		}
