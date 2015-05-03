@@ -23,18 +23,17 @@ var factorial = function (number) {
 // 3. Uniques
 var uniques = function (array1) {
     var noDups = [];
-    var exist = true;
+
 
     for (var i = 0; i < array1.length; ++i) {  // loops through orig array
-
+        var exist = false;
         for (var j = 0; j < noDups.length; ++j) { // loops through noDups array
 
-            if (noDups[j] !== array1[i]) {  // checks to see if item is in noDups array, 
-                exist = !exist;
+            if (noDups[j] === array1[i]) {  // checks to see if item is in noDups array,
+                exist = true;
             }
-
         }
-        if (exist !== true) {
+        if (exist === false) {
             noDups.push(array1[i]);
         }
     }
