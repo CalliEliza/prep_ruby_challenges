@@ -9,6 +9,7 @@ var power = function (base, exponent) {
   return result;
 }
 
+
 // 2. factorial
 var factorial = function (number) {
   var result = number;
@@ -19,8 +20,6 @@ var factorial = function (number) {
 }
 
 
-
-
 // 3. Uniques
 var uniques = function (array1) {
 	var noDups = [];
@@ -28,9 +27,10 @@ var uniques = function (array1) {
 		if (array1[i] !== array1[i+1]) {
 			noDups.push(array1[i]);
 		}
-	return noDups;
 	}
+	return noDups;
 }
+
 
 // 4. combinations
 var combinations = function (array1, array2) {
@@ -53,5 +53,6 @@ var is_prime = function (num) {
 		}
 	}
 }
+
 
 // 6. Overlapping rectangles
