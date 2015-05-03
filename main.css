@@ -1,0 +1,27 @@
+body {
+	background-color: #ebe7e4;
+}
+
+input[type='button'], input[type='reset'] {
+	margin: 1em;
+	padding: 1em;
+	border-radius: 2em;
+	background-color: #90b4b8;
+	border-left: 2px solid #3f3642;
+	border-top: 2px solid #3f3642;
+	border-bottom: 2px solid #5D5161;
+	border-right: 2px solid #5D5161;
+}
+
+input[type='button']:hover, input[type='reset']:hover {
+	margin: 1em;
+	padding: 1em;
+	border-radius: 2em;
+	border: none;
+	background-color: #90b4b8;
+	color: #fff;
+	border-left: 2px solid #5D5161;
+	border-top: 2px solid #5D5161;
+	border-bottom: 2px solid #3f3642;
+	border-right: 2px solid #3f3642;
+}
