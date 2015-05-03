@@ -27,7 +27,13 @@ var uniques = function (array) {
 }
 
 // 4. combinations
-
+var combinations = function (array1, array2) {
+	var combo = [];
+	for (i = 0; i < array1.length; ++i) {
+		combo.push(array1[i].concat(array2[i]));
+	}
+	return combo;
+}
 
 
 // 5. Is it prime?
@@ -41,3 +47,5 @@ var is_prime = function (num) {
 		}
 	}
 }
+
+// 6. Overlapping rectangles
