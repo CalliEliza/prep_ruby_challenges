@@ -66,15 +66,11 @@ var is_prime = function (num) {
 
 // 6. Overlapping rectangles
 var overlap = function (array1, array2) {
-    var overLap = false;
-    if ( ((array1[1][0] < array2[1][0] && array1[1][1] < array2[1][1])
-        && (array1[1][0] > array2[0][1] && array1[1][1] > array2[0][0]))
-        || ((array2[0][0] > array1[0][0] && array2[0][1] > array1[0][1]))
-        && (array2[0][0] < array1[1][0] && array2[0][1] < array1[1][1])
-        || ((array2[1][0] > array1[0][0] && array2[1][1] > array1[0][1])
-        && (array1[0][0] > array2[0][0] && array1[0][1] > array2[0][1])
-        )) {
-        overLap = true;
+    var bottomLeftY= array2[0][1] > array1[0][1];
+    var topRightY = array2[1][1] > array1[1][1];
+    var bottomLeftX = array2[0][0] > array1[1][0];
+    //var topRightX = ;
+    if ( bottomLeftX === true || topRightY === true || bottomLeftY === true ) {
+        return false;
     }
-    return overLap;
 };
