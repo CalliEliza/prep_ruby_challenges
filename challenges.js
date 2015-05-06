@@ -53,17 +53,15 @@ var combinations = function (array1, array2) {
 
 // 5. Is it prime?
 var is_prime = function (num) {
-    for (i = 1; i< 10; ++i) {
-        if (num === 2) {
+	if (num === 2) {
             return true;
         }
+    for (i = 1; i< 10; ++i) {
         else if (num % i === 0 ) {
             return false;
         }
-        else {
-            return true;
-        }
-    }
+    }    
+    return true;
 };
 
 
