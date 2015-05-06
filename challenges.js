@@ -53,15 +53,18 @@ var combinations = function (array1, array2) {
 
 // 5. Is it prime?
 var is_prime = function (num) {
-	for (i = 1; i< 10; ++i) {
-		if (num % i === 0 ) {
-			return false;
-		}
-		else {
-			return true;
-		}
-	}
-}
+    for (i = 1; i< 10; ++i) {
+        if (num === 2) {
+            return true;
+        }
+        else if (num % i === 0 ) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+};
 
 
 // 6. Overlapping rectangles
